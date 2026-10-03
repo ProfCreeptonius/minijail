@@ -16,6 +16,18 @@ minijail /path/to/root/ /path/to/root/executable/under/that/root
 - Only the root user has permission to create a jail.
 - If your jail root does not contain `/libexec/ld-elf.so.1`, then you cannot jail a dynamic executable. 
 
+## Build and IDE setup
+
+``` sh
+mkdir build
+cd build
+cmake .. [-G"Ninja"] [-DCMAKE_CXX_COMPILER=clang++22] [-DCMAKE_BUILD_TYPE=Release]
+cmake --build .
+```
+
+This will also generate the `compile_commands.json` file for `clangd`.
+
+
 ## Disclaimer
 
 - THIS PROGRAM IS HEAVILY WIP AND ONLY INTENDED FOR LEARNING PURPOSES
