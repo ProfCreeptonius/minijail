@@ -25,7 +25,13 @@ cmake .. [-G"Ninja"] [-DCMAKE_CXX_COMPILER=clang++22] [-DCMAKE_BUILD_TYPE=Releas
 cmake --build .
 ```
 
-This will also generate the `compile_commands.json` file for `clangd`.
+This will also generate the `compile_commands.json` file for `clangd`. You can test the program using
+
+``` sh
+minijail ./test ./test/test
+```
+
+
 
 
 ## Disclaimer
