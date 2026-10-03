@@ -31,12 +31,13 @@ This will also generate the `compile_commands.json` file for `clangd`. You can t
 minijail ./test ./test/test
 ```
 
-
-
-
 ## Disclaimer
 
 - THIS PROGRAM IS HEAVILY WIP AND ONLY INTENDED FOR LEARNING PURPOSES
+
+## LLM Usage Disclaimer
+
+100% human-created. LLM generated issues and PR's will be ignored.
 
 ## License
 
